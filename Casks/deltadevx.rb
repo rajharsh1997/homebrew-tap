@@ -13,8 +13,6 @@ cask "deltadevx" do
       If you get a "damaged and can't be opened" error from Gatekeeper,
       you can bypass it by running the following command in your terminal:
         sudo xattr -cr /Applications/DeltaDevX.app
-      Alternatively, you can uninstall and reinstall with the no-quarantine flag:
-        brew reinstall --cask rajharsh1997/tap/deltadevx --no-quarantine
     EOS
   end
 end
