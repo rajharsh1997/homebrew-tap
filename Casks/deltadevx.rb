@@ -8,5 +8,15 @@ cask "deltadevx" do
   desc "A cross-platform offline developer toolbox"
   homepage "https://github.com/rajharsh1997/deltadevx"
   app "DeltaDevX.app"
-  no_quarantine true
+  # Added this block to warn users and give them instructions
+  caveats do
+    <<~EOS
+      DeltaDevX is not signed with an Apple Developer certificate yet. 
+      If you get a "damaged and can't be opened" error from Gatekeeper,
+      you can bypass it by running the following command in your terminal:
+        sudo xattr -cr /Applications/DeltaDevX.app
+      Alternatively, you can uninstall and reinstall with the no-quarantine flag:
+        brew reinstall --cask xyxyx/tap/deltadevx --no-quarantine
+    EOS
+  end
 end
