@@ -8,4 +8,5 @@ cask "deltadevx" do
   desc "A cross-platform offline developer toolbox"
   homepage "https://github.com/rajharsh1997/deltadevx"
   app "DeltaDevX.app"
+  no_quarantine true
 end
