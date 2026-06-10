@@ -1,6 +1,6 @@
 cask "deltadevx" do
-  version "1.1.0"
-  sha256 "4d4afaeb0e85c599ee228ef290bb3c12ce86415c8ea528b600838c2371dcea0b"
+  version "1.2.0"
+  sha256 "e0608c86a76e2a2cb89e41641c532df7cda25a7b64586a9f3ae97b44da137540"
   url "https://github.com/rajharsh1997/deltadevx/releases/download/v#{version}/DeltaDevX_#{version}_universal.dmg"
   name "DeltaDevX"
   desc "A cross-platform offline developer toolbox"
